@@ -87,6 +87,7 @@ function setHeader(title, back, reading = false) {
   if (back) $("#backBtn").href = back;
   $("#homeBtn").hidden = !back || back === "#/";  // back already goes home from a category
   $("#readTools").hidden = !reading;
+  $("#searchBtn").hidden = !back || reading || location.hash.startsWith("#/search");  // home has its own box
 }
 
 const spinner = () => `<p class="loading">ဖွင့်နေသည်…</p>`;
@@ -108,7 +109,260 @@ function viewHome() {
   setHeader(APP_TITLE, null);
   const cards = CAT.categories.map(c => `<a class="card cat" href="#/${esc(c.slug)}">
       <strong>${esc(c.title)}</strong><span>စာအုပ် ${mm(c.count)} အုပ်</span></a>`).join("");
-  return `<h2 class="section-title">စာအုပ်အမျိုးအစားများ</h2><div class="cats">${cards}</div>${notice("ဤစာအုပ်များ")}`;
+  return `${searchForm()}<h2 class="section-title">စာအုပ်အမျိုးအစားများ</h2><div class="cats">${cards}</div>${notice("ဤစာအုပ်များ")}
+    <p class="credit"><a href="#/about">ⓘ ဤစာကြည့်တိုက်အကြောင်း</a></p>`;
+}
+
+function viewAbout() {
+  setHeader("ဤစာကြည့်တိုက်အကြောင်း", "#/");
+  const link = (url, text) => `<a href="${url}" target="_blank" rel="noopener">${text}</a>`;
+  const blog = link("https://myatbuddha-sasana.blogspot.com/", "မြတ်ဗုဒ္ဓသာသနာ");
+  const source = link(SOURCE_URL, "Dhammadownload.com");
+  const bookCount = CAT.categories.reduce((n, c) => n + c.count, 0);
+  return `<div class="about">
+    <div class="about-hero">
+      <img src="icons/icon-192.png" alt="" width="84" height="84">
+      <h2>${APP_TITLE}</h2>
+      <p class="muted">ဓမ္မစာအုပ်များကို အွန်လိုင်းမှ တိုက်ရိုက် ဖတ်ရှုနိုင်ရန်</p>
+    </div>
+
+    <div class="card about-card">
+      <h3>🙏 ကျေးဇူးတင်လွှာ</h3>
+      <p>ဤစာကြည့်တိုက်ရှိ Unicode စာအုပ်ဖိုင်များကို ${blog} ဘလော့ဂ်မှ ရယူထားခြင်း ဖြစ်ပါသည်။
+        စေတနာဖြင့် ပြုစု မျှဝေပေးကြသူများကို ကျေးဇူးအထူး တင်ရှိပါသည်။</p>
+      <p>မူရင်း PDF စာအုပ်များကို ${source} တွင် ဖတ်ရှုနိုင်ပါသည်။</p>
+      <p>ဓမ္မဒါန ပြုတော်မူကြသော ဆရာတော်ဘုရားများနှင့် ပုဂ္ဂိုလ်အားလုံးကို ကျေးဇူးတင်ရှိပါသည်။</p>
+    </div>
+
+    <div class="card about-card">
+      <h3>📖 ဖတ်ရှုရာတွင် သတိပြုရန်</h3>
+      <p>စာအုပ်များကို မူရင်း PDF မှ ပြောင်းလဲထားခြင်းဖြစ်၍ အမှားအယွင်း ပါဝင်နိုင်ပါသည်။ မူရင်း PDF နှင့် တိုက်ဆိုင်စစ်ဆေးပါရန်။</p>
+    </div>
+
+    <div class="card about-card">
+      <h3>ℹ ဤစာကြည့်တိုက်အကြောင်း</h3>
+      <ul>
+        <li>စာအုပ် ${mm(bookCount)} အုပ်ကို ဒေါင်းလုဒ်မလုပ်ဘဲ တိုက်ရိုက် ဖတ်ရှု၊ ရှာဖွေနိုင်ပါသည်။</li>
+        <li>ကြော်ငြာ မရှိပါ။ အကောင့်ဖွင့်ရန် မလိုပါ။ အခမဲ့ ဖြစ်ပါသည်။</li>
+        <li>စာလုံးအရွယ်အစားနှင့် အလင်း၊ အမှောင် ရွေးချယ်မှုကို သင့်ဖုန်းထဲတွင်သာ သိမ်းပါသည်။ ကိုယ်ရေးအချက်အလက် စုဆောင်းခြင်း မရှိပါ။</li>
+      </ul>
+    </div>
+
+    <p class="credit">ဤစာကြည့်တိုက်သည် ${blog} ဘလော့ဂ် သို့မဟုတ် ${source} ၏ တရားဝင်စာမျက်နှာ မဟုတ်ပါ။
+      စာဖတ်သူများ အဆင်ပြေစေရန် စေတနာဖြင့် ပြုလုပ်ထားခြင်း ဖြစ်ပါသည်။<br><br>သာဓု သာဓု သာဓု 🙏</p>
+  </div>`;
+}
+
+/* ---------- search ---------- */
+const RESULTS_STEP = 30;
+const shards = new Map();         // index file number -> its tokens
+const foundPages = new Map();     // query -> page numbers from the index
+const snippets = new Map();       // "query|page" -> what the page really holds, or null
+const resultsShown = new Map();   // query -> how many rows were open
+let pageList = null;              // page number -> {book, page}
+let highlight = null;             // set when a result is tapped
+let afterRender = null;
+
+const searchForm = (q = "") => `<form class="search" role="search">
+    <input name="q" type="search" lang="my" value="${esc(q)}" placeholder="စာအုပ်အားလုံးတွင် ရှာဖွေရန်" aria-label="ရှာဖွေရန်" autocomplete="off">
+    <button class="btn">ရှာရန်</button></form>`;
+
+function allPages() {
+  if (!pageList) {
+    pageList = CAT.categories.flatMap(c => c.books.flatMap(b => Array.from({ length: b.pages }, (_, i) => ({ book: b, page: i + 1 }))));
+  }
+  return pageList;
+}
+
+async function loadShard(n) {
+  if (!shards.has(n)) shards.set(n, await getJSON(`search/${String(n).padStart(4, "0")}.json`));
+  return shards.get(n);
+}
+
+/* Pages holding every syllable pair of the query. These are candidates: each is confirmed against
+   the page's real text when its row comes into view. */
+async function findPages(q) {
+  if (foundPages.has(q)) return foundPages.get(q);
+  const keys = searchKeys(q);
+  const lists = await Promise.all(keys.map(async key => (await loadShard(searchShard(key)))[key] || []));
+  let result = [];
+  if (lists.length && lists.every(list => list.length)) {
+    const decoded = lists.map(list => { let at = 0; return list.map((gap, i) => (at = i ? at + gap : gap)); });
+    decoded.sort((a, b) => a.length - b.length);
+    const others = decoded.slice(1).map(list => new Set(list));
+    result = decoded[0].filter(page => others.every(set => set.has(page)));
+  }
+  foundPages.set(q, result);
+  return result;
+}
+
+/* Finds the query in real text, ignoring differences in spacing and punctuation. */
+function searchPattern(q) {
+  const gap = "[\\s\\u200b-\\u200d၊။,.\\-–—]*";
+  const parts = [...searchClean(q)].map(c => c === "ဝ" ? "[ဝ၀]" : c === "ဩ" ? "(?:ဩ|သြ)" : c);
+  return new RegExp(parts.join(gap), "gi");
+}
+
+const pageText = html => {
+  const box = document.createElement("template");
+  box.innerHTML = html.replace(/<\/(p|h\d|li|td|th)>/g, "\n");
+  return box.content.textContent;
+};
+
+function hitRow(q, number) {
+  const { book, page } = allPages()[number];
+  return `<li data-page="${number}"><a class="row-main" data-q="${esc(q)}" href="#/${book.slug}/${page}">
+      <span class="row-title">${esc(book.title)}</span>
+      <span class="row-meta">စာမျက်နှာ ${mm(page)}</span>
+      <span class="snippet"></span></a></li>`;
+}
+
+function paintRow(row, info) {
+  if (!info) { row.remove(); return; }
+  const meta = $(".row-meta", row);
+  meta.textContent = `${info.title} · ${mm(info.count)} ကြိမ်`;
+  $(".snippet", row).innerHTML = `${esc(info.before)}<mark>${esc(info.match)}</mark>${esc(info.after)}`;
+}
+
+async function confirmRow(row, q) {
+  const number = Number(row.dataset.page);
+  const key = `${q}|${number}`;
+  if (!snippets.has(key)) {
+    const { book, page } = allPages()[number];
+    const index = await loadBook(book.slug);
+    const text = pageText(await loadPage(book.slug, index.pages[page - 1].file));
+    const hits = [...text.matchAll(searchPattern(q))];
+    const first = hits[0];
+    snippets.set(key, first ? {
+      title: index.pages[page - 1].title, count: hits.length, match: first[0],
+      before: "…" + text.slice(Math.max(0, first.index - 40), first.index).replace(/^[ါ-ှ]+/, "").replace(/\s+/g, " "),
+      after: text.slice(first.index + first[0].length, first.index + first[0].length + 60).replace(/\s+/g, " ") + "…",
+    } : null);
+  }
+  paintRow(row, snippets.get(key));
+}
+
+/* Only rows on screen fetch their page, two at a time, to go easy on slow connections. */
+let rowObserver = null;
+let rowQueue = [];
+let rowsBusy = 0;
+
+function pumpRows(q, list) {
+  while (rowsBusy < 2 && rowQueue.length) {
+    const row = rowQueue.shift();
+    if (!row.isConnected) continue;
+    rowsBusy += 1;
+    confirmRow(row, q).catch(() => {}).finally(() => {
+      rowsBusy -= 1;
+      if (list.isConnected && !list.children.length && !$("[data-action='more']")) $("#textStatus").textContent = "မတွေ့ပါ";
+      pumpRows(q, list);
+    });
+  }
+}
+
+function addRows(q, numbers, list, from, to) {
+  list.insertAdjacentHTML("beforeend", numbers.slice(from, to).map(n => hitRow(q, n)).join(""));
+  for (const row of [...list.children].slice(from)) {
+    const known = snippets.get(`${q}|${row.dataset.page}`);
+    if (known !== undefined) paintRow(row, known);
+    else rowObserver.observe(row);
+  }
+  resultsShown.set(q, to);
+  const more = $("[data-action='more']");
+  if (more) more.hidden = to >= numbers.length;
+}
+
+function viewSearch(q = "") {
+  setHeader("ရှာဖွေရန်", "#/");
+  if (searchClean(q).length < 2) {
+    afterRender = () => $(".search input").focus();
+    return `${searchForm(q)}<div class="card empty">ရှာလိုသော စကားလုံးကို ရိုက်ထည့်ပါ</div>`;
+  }
+  const key = searchClean(q);
+  const titleHits = [...books.values()].filter(b => searchClean(b.title).includes(key));
+  const titleRows = titleHits.map(b => `<li><a class="row-main" href="#/${b.slug}">
+      <span class="row-title">${esc(b.title)}</span><span class="row-meta">${esc(b.category.title)}</span></a></li>`).join("");
+  afterRender = () => runTextSearch(q);
+  return `${searchForm(q)}
+    ${titleRows ? `<h2 class="section-title">စာအုပ်အမည်</h2><div class="card"><ul class="list">${titleRows}</ul></div>` : ""}
+    <h2 class="section-title">စာအုပ်အတွင်း</h2>
+    <p id="textStatus" class="status">ရှာဖွေနေသည်…</p>
+    <div class="card" id="textCard" hidden><ul class="list" id="textHits"></ul></div>
+    <button class="btn more" data-action="more" hidden>နောက်ထပ်</button>`;
+}
+
+async function runTextSearch(q) {
+  const seq = routeSeq;
+  let numbers;
+  try {
+    numbers = await findPages(q);
+  } catch {
+    if (seq === routeSeq) $("#textStatus").textContent = "ဖွင့်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။";
+    return;
+  }
+  if (seq !== routeSeq) return;
+  $("#textStatus").textContent = numbers.length ? `စာမျက်နှာ ${mm(numbers.length)} ခုခန့်တွင် တွေ့ရှိပါသည်` : "မတွေ့ပါ";
+  if (!numbers.length) return;
+
+  const list = $("#textHits");
+  $("#textCard").hidden = false;
+  rowQueue = [];
+  rowObserver?.disconnect();
+  rowObserver = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      rowObserver.unobserve(entry.target);
+      rowQueue.push(entry.target);
+    }
+    pumpRows(q, list);
+  }, { rootMargin: "200px" });
+
+  addRows(q, numbers, list, 0, Math.max(RESULTS_STEP, resultsShown.get(q) || 0));
+  $("[data-action='more']").onclick = () => {
+    const shown = list.children.length;
+    addRows(q, numbers, list, shown, shown + RESULTS_STEP);
+  };
+  window.scrollTo(0, scrollMemo.get(location.hash) || 0);
+}
+
+/* Marks the query on the page a result opened, and offers a way to step through the matches. */
+function markMatches(q) {
+  const article = $(".reader");
+  const pattern = searchPattern(q);
+  const walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  for (const node of nodes) {
+    const matches = [...node.data.matchAll(pattern)];
+    for (const m of matches.reverse()) {
+      const target = node.splitText(m.index);
+      target.splitText(m[0].length);
+      const mark = document.createElement("mark");
+      target.replaceWith(mark);
+      mark.append(target);
+    }
+  }
+  let hits = [...article.querySelectorAll("mark")];
+  if (!hits.length) {  // the words cross bold and plain text, so mark the whole paragraph
+    hits = [...article.children].filter(el => { pattern.lastIndex = 0; return pattern.test(el.textContent); });
+    hits.forEach(el => el.classList.add("hit-block"));
+  }
+  if (!hits.length) return false;
+
+  let at = 0;
+  const show = () => {
+    hits[at].scrollIntoView({ block: "center" });
+    hits.forEach((el, i) => el.classList.toggle("current", i === at));
+    const label = $("#hitCount");
+    if (label) label.textContent = `${mm(at + 1)} / ${mm(hits.length)}`;
+  };
+  if (hits.length > 1) {
+    $("#view").insertAdjacentHTML("beforeend", `<div class="hit-nav"><span id="hitCount"></span>
+      <button class="btn" id="hitNext">နောက်တစ်ခု</button></div>`);
+    $("#hitNext").onclick = () => { at = (at + 1) % hits.length; show(); };
+  }
+  show();
+  return true;
 }
 
 function viewCategory(slug) {
@@ -207,7 +461,10 @@ async function route() {
   const [category, number, page, anchor] = (location.hash.slice(1) || "/").split("/").filter(Boolean).map(decodeURIComponent);
   let html;
   try {
+    afterRender = null;
     if (!category) html = viewHome();
+    else if (category === "search") html = viewSearch(number);
+    else if (category === "about") html = viewAbout();
     else if (!number) html = viewCategory(category);
     else if (!page) html = await viewBook(`${category}/${number}`);
     else html = await viewReader(`${category}/${number}`, page);
@@ -216,9 +473,12 @@ async function route() {
   }
   if (seq !== routeSeq) return;  // the reader has already moved on
   $("#view").innerHTML = html;
+  const marked = highlight?.hash === location.hash && $(".reader") && markMatches(highlight.q);
+  highlight = null;
   const target = anchor && document.getElementById(anchor);
   if (target) target.scrollIntoView();
-  else window.scrollTo(0, scrollMemo.get(location.hash) || 0);
+  else if (!marked) window.scrollTo(0, scrollMemo.get(location.hash) || 0);
+  afterRender?.();
 }
 
 let lastHash = location.hash;
@@ -232,6 +492,8 @@ window.addEventListener("hashchange", () => {
 document.addEventListener("click", ev => {
   const fresh = ev.target.closest("[data-fresh]");
   if (fresh) scrollMemo.delete(fresh.getAttribute("href"));  // next/previous always start at the top
+  const result = ev.target.closest("[data-q]");
+  if (result) highlight = { hash: result.getAttribute("href"), q: result.dataset.q };
 
   const button = ev.target.closest("[data-action]");
   if (!button) return;
@@ -243,6 +505,12 @@ document.addEventListener("click", ev => {
     list.hidden = !list.hidden;
     button.setAttribute("aria-expanded", String(!list.hidden));
   }
+});
+
+document.addEventListener("submit", ev => {
+  ev.preventDefault();
+  const q = ev.target.elements.q.value.trim();
+  if (q) location.hash = `#/search/${encodeURIComponent(q)}`;
 });
 
 $("#fontDown").onclick = () => changeFontSize(-1);

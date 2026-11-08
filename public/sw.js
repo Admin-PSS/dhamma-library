@@ -1,7 +1,7 @@
 /* Service worker: makes the site open fast on slow connections and work as an installed app.
    Pages of text are answered from the cache at once and refreshed in the background. */
-const VERSION = "dl-v1";
-const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "catalog.json",
+const VERSION = "dl-v2";
+const SHELL = ["./", "index.html", "style.css", "search-tokens.js", "app.js", "manifest.webmanifest", "catalog.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {

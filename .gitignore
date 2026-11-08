@@ -1,5 +1,7 @@
 node_modules/
 update-report.txt
+# Built by GitHub at publish time; committing it would bloat the repo with every update.
+public/search/
 # The project brief holds a private OneDrive share link.
 Claude.md
 CLAUDE.md

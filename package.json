@@ -6,6 +6,7 @@
   "scripts": {
     "convert": "node scripts/convert.mjs",
     "publish": "node scripts/publish.mjs",
+    "search": "node scripts/build-search.mjs",
     "serve": "python -m http.server 8765 --directory public"
   },
   "dependencies": {

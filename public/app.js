@@ -247,15 +247,16 @@ let rowObserver = null;
 let rowQueue = [];
 let rowsBusy = 0;
 
-function pumpRows(q, list) {
+function pumpRows() {
   while (rowsBusy < 2 && rowQueue.length) {
-    const row = rowQueue.shift();
+    const { row, q } = rowQueue.shift();  // each row keeps its own query, in case a new search has started
     if (!row.isConnected) continue;
     rowsBusy += 1;
     confirmRow(row, q).catch(() => {}).finally(() => {
       rowsBusy -= 1;
-      if (list.isConnected && !list.children.length && !$("[data-action='more']")) $("#textStatus").textContent = "မတွေ့ပါ";
-      pumpRows(q, list);
+      const list = $("#textHits");
+      if (list && !list.children.length && $("[data-action='more']").hidden) $("#textStatus").textContent = "မတွေ့ပါ";
+      pumpRows();
     });
   }
 }
@@ -312,9 +313,9 @@ async function runTextSearch(q) {
     for (const entry of entries) {
       if (!entry.isIntersecting) continue;
       rowObserver.unobserve(entry.target);
-      rowQueue.push(entry.target);
+      rowQueue.push({ row: entry.target, q });
     }
-    pumpRows(q, list);
+    pumpRows();
   }, { rootMargin: "200px" });
 
   addRows(q, numbers, list, 0, Math.max(RESULTS_STEP, resultsShown.get(q) || 0));

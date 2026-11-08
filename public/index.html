@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ဓမ္မစာကြည့်တိုက်</title>
+<meta name="description" content="ဓမ္မစာအုပ်များကို ဒေါင်းလုဒ်မလုပ်ဘဲ အွန်လိုင်းမှ တိုက်ရိုက်ဖတ်ရှုနိုင်ပါသည်။">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ဓမ္မစာကြည့်တိုက်">
+<meta property="og:title" content="ဓမ္မစာကြည့်တိုက်">
+<meta property="og:description" content="ဓမ္မစာအုပ်များကို ဒေါင်းလုဒ်မလုပ်ဘဲ အွန်လိုင်းမှ တိုက်ရိုက်ဖတ်ရှုနိုင်ပါသည်။">
+<meta name="theme-color" content="#8b4513">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ဓမ္မစာကြည့်တိုက်">
+<script>
+  /* Set the saved look before the first paint, so dark-mode readers get no white flash. */
+  try {
+    const saved = JSON.parse(localStorage.getItem("dl.settings") || "{}");
+    if (saved.theme && saved.theme !== "auto") document.documentElement.dataset.theme = saved.theme;
+  } catch { /* storage unavailable */ }
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a id="backBtn" class="icon-btn back" href="#/" aria-label="နောက်သို့" hidden>‹</a>
+  <a id="homeBtn" class="icon-btn" href="#/" aria-label="ပင်မစာမျက်နှာ" hidden>
+    <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path fill="currentColor" d="M12 3.2 2.5 11.6l1.3 1.5L5.5 11.6V20a1 1 0 0 0 1 1h4v-6h3v6h4a1 1 0 0 0 1-1v-8.4l1.7 1.5 1.3-1.5z"/></svg>
+  </a>
+  <h1 id="viewTitle">ဓမ္မစာကြည့်တိုက်</h1>
+  <div id="readTools" class="tools" hidden>
+    <button id="fontDown" class="icon-btn text" aria-label="စာလုံးငယ်ရန်">A−</button>
+    <button id="fontUp" class="icon-btn text" aria-label="စာလုံးကြီးရန်">A+</button>
+  </div>
+  <button id="themeBtn" class="icon-btn" aria-label="အလင်း၊ အမှောင် ပြောင်းရန်">
+    <svg class="moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M21 14.5A9 9 0 0 1 9.5 3a9 9 0 1 0 11.5 11.5z"/></svg>
+    <svg class="sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+  </button>
+</header>
+
+<main id="view" aria-live="polite"><p class="loading">ဖွင့်နေသည်…</p></main>
+<noscript><p class="loading">ဤစာမျက်နှာကို ဖတ်ရှုရန် JavaScript ဖွင့်ထားရန် လိုအပ်ပါသည်။</p></noscript>
+
+<script src="app.js"></script>
+</body>
+</html>

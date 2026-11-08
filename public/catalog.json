@@ -1,0 +1,1276 @@
+{
+  "categories": [
+    {
+      "slug": "khuddaka",
+      "title": "ခုဒ္ဒကနိကာယ် 15 Suttas",
+      "books": [
+        {
+          "slug": "khuddaka/05",
+          "number": 5,
+          "title": "ခုဒ္ဒကနိကာယ် ၁ ခုဒ္ဒကပါဌ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 10140
+        },
+        {
+          "slug": "khuddaka/06",
+          "number": 6,
+          "title": "ခုဒ္ဒကနိကာယ် ၂ ဓမ္မပဒ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 53948
+        },
+        {
+          "slug": "khuddaka/07",
+          "number": 7,
+          "title": "ခုဒ္ဒကနိကာယ် ၃ ဥဒါန",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 161758
+        },
+        {
+          "slug": "khuddaka/08",
+          "number": 8,
+          "title": "ခုဒ္ဒကနိကာယ် ၄ ဣတိ၀ုတ္တက",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 96766
+        },
+        {
+          "slug": "khuddaka/09",
+          "number": 9,
+          "title": "ခုဒ္ဒကနိကာယ် ၅ သုတ္တနိပါတ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 170589
+        },
+        {
+          "slug": "khuddaka/10",
+          "number": 10,
+          "title": "ခုဒ္ဒကနိကာယ် ၆ ၀ိမာန၀တ္ထု",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 106153
+        },
+        {
+          "slug": "khuddaka/11",
+          "number": 11,
+          "title": "ခုဒ္ဒကနိကာယ် ၇ ပေတ၀တ္ထု",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 85906
+        },
+        {
+          "slug": "khuddaka/12",
+          "number": 12,
+          "title": "ခုဒ္ဒကနိကာယ် ၈ ထေရဂါထာ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 137828
+        },
+        {
+          "slug": "khuddaka/13",
+          "number": 13,
+          "title": "ခုဒ္ဒကနိကာယ် ၉ ထေရီဂါထာ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 52893
+        },
+        {
+          "slug": "khuddaka/14",
+          "number": 14,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၀ ဇာတက-၁",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 359495
+        },
+        {
+          "slug": "khuddaka/15",
+          "number": 15,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၀-က ဇာတက-၂",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 389929
+        },
+        {
+          "slug": "khuddaka/16",
+          "number": 16,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၁-က မဟာနိဒ္ဒေသ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 8,
+          "chars": 630331
+        },
+        {
+          "slug": "khuddaka/17",
+          "number": 17,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၁-ခ စူဠနိဒ္ဒေသ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 439030
+        },
+        {
+          "slug": "khuddaka/18",
+          "number": 18,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၂ ပဋိသမ္ဘိဒါမဂ်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 8,
+          "chars": 671532
+        },
+        {
+          "slug": "khuddaka/19",
+          "number": 19,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၃ အပဒါန-၁",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 425539
+        },
+        {
+          "slug": "khuddaka/20",
+          "number": 20,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၃ အပဒါန-၂",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 297912
+        },
+        {
+          "slug": "khuddaka/21",
+          "number": 21,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၄ ဗုဒ္ဓ၀ံသ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 90282
+        },
+        {
+          "slug": "khuddaka/22",
+          "number": 22,
+          "title": "ခုဒ္ဒကနိကာယ် ၁၅ စရိယာပိဋက",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 33259
+        },
+        {
+          "slug": "khuddaka/23",
+          "number": 23,
+          "title": "နေတ္တိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 235316
+        },
+        {
+          "slug": "khuddaka/24",
+          "number": 24,
+          "title": "ပေဋကောပဒေသ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 262636
+        },
+        {
+          "slug": "khuddaka/25",
+          "number": 25,
+          "title": "မိလိန္ဒပဥှာ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 6,
+          "chars": 566803
+        }
+      ],
+      "count": 21
+    },
+    {
+      "slug": "digha",
+      "title": "ဒီဃနိကာယ် 3 suttas",
+      "books": [
+        {
+          "slug": "digha/01",
+          "number": 1,
+          "title": "ဒီဃနိကာယ် ၁",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 344449
+        },
+        {
+          "slug": "digha/02",
+          "number": 2,
+          "title": "ဒီဃနိကာယ် ၂",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 418198
+        },
+        {
+          "slug": "digha/03",
+          "number": 3,
+          "title": "ဒီဃနိကာယ် ၃",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 364674
+        }
+      ],
+      "count": 3
+    },
+    {
+      "slug": "mahagandhayon",
+      "title": "မဟာဂန္ဓာရုံဆရာတော်",
+      "books": [
+        {
+          "slug": "mahagandhayon/01",
+          "number": 1,
+          "title": "အခြေပြုပဋ္ဌာန်းတရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 9,
+          "chars": 882081
+        },
+        {
+          "slug": "mahagandhayon/02",
+          "number": 2,
+          "title": "သူတော်ကောင်း လက္ခဏာ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 46827
+        },
+        {
+          "slug": "mahagandhayon/03",
+          "number": 3,
+          "title": "ဘာသာသွေး",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 168607
+        },
+        {
+          "slug": "mahagandhayon/04",
+          "number": 4,
+          "title": "ကိုယ်ကျင့် အဘိဓမ္မာ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 403762
+        },
+        {
+          "slug": "mahagandhayon/05",
+          "number": 5,
+          "title": "အနာဂတ်သာသနာရေး",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 6,
+          "chars": 528007
+        },
+        {
+          "slug": "mahagandhayon/06",
+          "number": 6,
+          "title": "မဟာသမယသုတ် ပါဌ် နိဿယ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 49089
+        },
+        {
+          "slug": "mahagandhayon/07",
+          "number": 7,
+          "title": "ဗြဟ္မဇာလသုတ် မြန်မာဘာသာပြန်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 116152
+        },
+        {
+          "slug": "mahagandhayon/08",
+          "number": 8,
+          "title": "ဘုရားဥပဒေတော်ကြီး",
+          "format": "docx",
+          "chapters": 13,
+          "pages": 17,
+          "chars": 698619
+        },
+        {
+          "slug": "mahagandhayon/09",
+          "number": 9,
+          "title": "နောက်ဆုံးဆယ်လ မြတ်ဗုဒ္ဓ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 260884
+        },
+        {
+          "slug": "mahagandhayon/10",
+          "number": 10,
+          "title": "အဘိဓမ္မာနှင့်စပ်၍ မှတ်ဖွယ်များ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 46806
+        },
+        {
+          "slug": "mahagandhayon/11",
+          "number": 11,
+          "title": "လူ့ချမ်းသာ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 131705
+        },
+        {
+          "slug": "mahagandhayon/12",
+          "number": 12,
+          "title": "တဘ၀ သံသရာ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 11,
+          "chars": 854806
+        },
+        {
+          "slug": "mahagandhayon/13",
+          "number": 13,
+          "title": "ရတနာ့ဂုဏ်ရည်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 490305
+        },
+        {
+          "slug": "mahagandhayon/14",
+          "number": 14,
+          "title": "ဓမ္မစကြာတရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 359497
+        },
+        {
+          "slug": "mahagandhayon/15",
+          "number": 15,
+          "title": "အနတ္တလက္ခဏသုတ်တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 151234
+        },
+        {
+          "slug": "mahagandhayon/16",
+          "number": 16,
+          "title": "ပုဂ္ဂိုလ်အကျော်အမော်များ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 138418
+        },
+        {
+          "slug": "mahagandhayon/17",
+          "number": 17,
+          "title": "ရုပ်စုံဗုဒ္ဓဝင် အမေးအဖြေ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 140730
+        },
+        {
+          "slug": "mahagandhayon/18",
+          "number": 18,
+          "title": "ကမ္မဋ္ဌာန်း ဘာသာဋီကာ",
+          "format": "docx",
+          "chapters": 6,
+          "pages": 7,
+          "chars": 185464
+        },
+        {
+          "slug": "mahagandhayon/19",
+          "number": 19,
+          "title": "ပါတိမောက် ဘာသာဋီကာ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 9,
+          "chars": 885272
+        },
+        {
+          "slug": "mahagandhayon/20",
+          "number": 20,
+          "title": "အခြေပြုသင်္ဂြိုဟ်",
+          "format": "docx",
+          "chapters": 8,
+          "pages": 15,
+          "chars": 760301
+        }
+      ],
+      "count": 20
+    },
+    {
+      "slug": "mahasi",
+      "title": "မဟာစည်ဆရာတော်",
+      "books": [
+        {
+          "slug": "mahasi/01",
+          "number": 1,
+          "title": "ဘာရသုတ္တန် တရားတော်",
+          "format": "docx",
+          "chapters": 1,
+          "pages": 3,
+          "chars": 222235
+        },
+        {
+          "slug": "mahasi/02",
+          "number": 2,
+          "title": "ကာမသုတ္တန်တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 71379
+        },
+        {
+          "slug": "mahasi/03",
+          "number": 3,
+          "title": "သလ္လေခသုတ် တရားတော်ကြီး ၁",
+          "format": "docx",
+          "chapters": 6,
+          "pages": 7,
+          "chars": 471728
+        },
+        {
+          "slug": "mahasi/04",
+          "number": 4,
+          "title": "သလ္လေခသုတ် တရားတော်ကြီး ၂",
+          "format": "docx",
+          "chapters": 4,
+          "pages": 6,
+          "chars": 465297
+        },
+        {
+          "slug": "mahasi/05",
+          "number": 5,
+          "title": "ဝိနည်းအကျဉ်းချုပ်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 16514
+        },
+        {
+          "slug": "mahasi/06",
+          "number": 6,
+          "title": "နိဗ္ဗာန်ဆိုင်ရာ တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 388380
+        },
+        {
+          "slug": "mahasi/07",
+          "number": 7,
+          "title": "ဝိပဿနာ အလုပ်ပေး တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 68324
+        },
+        {
+          "slug": "mahasi/08",
+          "number": 8,
+          "title": "မဟာပစ္စဝေက္ခဏာ တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 64417
+        },
+        {
+          "slug": "mahasi/09",
+          "number": 9,
+          "title": "မာလုကျပုတ္တတရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 228456
+        },
+        {
+          "slug": "mahasi/10",
+          "number": 10,
+          "title": "အဘိဓမ္မာ တရားတော်ကြီး",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 8,
+          "chars": 703284
+        },
+        {
+          "slug": "mahasi/11",
+          "number": 11,
+          "title": "အာသီဝိသောပမသုတ် တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 9,
+          "chars": 829945
+        },
+        {
+          "slug": "mahasi/12",
+          "number": 12,
+          "title": "ဗောဇ္ဈင် တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 10,
+          "chars": 914447
+        },
+        {
+          "slug": "mahasi/13",
+          "number": 13,
+          "title": "ဟေမဝတသုတ္တန် တရားတော်",
+          "format": "docx",
+          "chapters": 6,
+          "pages": 6,
+          "chars": 400132
+        },
+        {
+          "slug": "mahasi/14",
+          "number": 14,
+          "title": "မဟာစည် ထေရဝုတ္တန္တဝိလာသိနီ ၁",
+          "format": "docx",
+          "chapters": 10,
+          "pages": 18,
+          "chars": 785281
+        },
+        {
+          "slug": "mahasi/15",
+          "number": 15,
+          "title": "မဟာစည် ထေရဝုတ္တန္တဝိလာသိနီ ၂",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 9,
+          "chars": 818773
+        },
+        {
+          "slug": "mahasi/16",
+          "number": 16,
+          "title": "ဗြဟ္မဝိဟာရတရားတော်",
+          "format": "docx",
+          "chapters": 6,
+          "pages": 7,
+          "chars": 430162
+        },
+        {
+          "slug": "mahasi/17",
+          "number": 17,
+          "title": "ဓမ္မစကြာတရားတော်ကြီး",
+          "format": "docx",
+          "chapters": 8,
+          "pages": 8,
+          "chars": 528865
+        },
+        {
+          "slug": "mahasi/18",
+          "number": 18,
+          "title": "သက္ကပဥှသုတ်တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 308609
+        },
+        {
+          "slug": "mahasi/19",
+          "number": 19,
+          "title": "ပဋိစ္စသမုပ္ပါဒ် တရားတော်ကြီး (ပထမတွဲ)",
+          "format": "docx",
+          "chapters": 5,
+          "pages": 7,
+          "chars": 458184
+        },
+        {
+          "slug": "mahasi/20",
+          "number": 20,
+          "title": "ပဋိစ္စသမုပ္ပါဒ် တရားတော်ကြီး (ဒုတိတွဲ)",
+          "format": "docx",
+          "chapters": 5,
+          "pages": 6,
+          "chars": 445185
+        },
+        {
+          "slug": "mahasi/21",
+          "number": 21,
+          "title": "သာရဏီယ တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 63201
+        },
+        {
+          "slug": "mahasi/22",
+          "number": 22,
+          "title": "ရှစ်ဖြာမဂ္ဂင်နိဗ္ဗာန်ဝင် တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 116357
+        },
+        {
+          "slug": "mahasi/23",
+          "number": 23,
+          "title": "အနတ္တလက္ခဏသုတ် နိဿယ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 23532
+        },
+        {
+          "slug": "mahasi/24",
+          "number": 24,
+          "title": "ဝိသုဒ္ဓိမဂ် မြန်မာပြန် ပ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 8,
+          "chars": 684643
+        },
+        {
+          "slug": "mahasi/25",
+          "number": 25,
+          "title": "ဝိသုဒ္ဓိမဂ် မြန်မာပြန် ဒု",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 595722
+        },
+        {
+          "slug": "mahasi/26",
+          "number": 26,
+          "title": "ဝိသုဒ္ဓိမဂ် မြန်မာပြန် တ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 6,
+          "chars": 480342
+        },
+        {
+          "slug": "mahasi/27",
+          "number": 27,
+          "title": "ဝိသုဒ္ဓိမဂ် မြန်မာပြန် စ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 608842
+        }
+      ],
+      "count": 27
+    },
+    {
+      "slug": "mingun",
+      "title": "မင်းကွန်းဆရာတော်",
+      "books": [
+        {
+          "slug": "mingun/01",
+          "number": 1,
+          "title": "ဗောဇ္ဈင်သုတ် (အကျယ်ဟောနည်း)",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 13357
+        },
+        {
+          "slug": "mingun/02",
+          "number": 2,
+          "title": "မဟာဗုဒ္ဓဝင် 1.1",
+          "format": "docx",
+          "chapters": 9,
+          "pages": 15,
+          "chars": 879842
+        },
+        {
+          "slug": "mingun/03",
+          "number": 3,
+          "title": "မဟာဗုဒ္ဓဝင် 1.2",
+          "format": "docx",
+          "chapters": 3,
+          "pages": 8,
+          "chars": 637583
+        },
+        {
+          "slug": "mingun/04",
+          "number": 4,
+          "title": "မဟာဗုဒ္ဓဝင် 2",
+          "format": "docx",
+          "chapters": 15,
+          "pages": 18,
+          "chars": 944559
+        },
+        {
+          "slug": "mingun/05",
+          "number": 5,
+          "title": "မဟာဗုဒ္ဓဝင် 3",
+          "format": "docx",
+          "chapters": 12,
+          "pages": 15,
+          "chars": 1011023
+        },
+        {
+          "slug": "mingun/06",
+          "number": 6,
+          "title": "မဟာဗုဒ္ဓဝင် 4",
+          "format": "docx",
+          "chapters": 10,
+          "pages": 14,
+          "chars": 970122
+        },
+        {
+          "slug": "mingun/07",
+          "number": 7,
+          "title": "မဟာဗုဒ္ဓဝင် 5",
+          "format": "docx",
+          "chapters": 5,
+          "pages": 14,
+          "chars": 1126610
+        },
+        {
+          "slug": "mingun/08",
+          "number": 8,
+          "title": "မဟာဗုဒ္ဓဝင် 6.1",
+          "format": "docx",
+          "chapters": 1,
+          "pages": 11,
+          "chars": 894988
+        },
+        {
+          "slug": "mingun/09",
+          "number": 9,
+          "title": "မဟာဗုဒ္ဓဝင် 6.2",
+          "format": "docx",
+          "chapters": 2,
+          "pages": 6,
+          "chars": 567179
+        },
+        {
+          "slug": "mingun/10",
+          "number": 10,
+          "title": "မေတ္တာဘာဝနာ တရားတော်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 17236
+        }
+      ],
+      "count": 10
+    },
+    {
+      "slug": "majjhima",
+      "title": "မဇ္ဈိမနိကာယ် 3 suttas",
+      "books": [
+        {
+          "slug": "majjhima/02",
+          "number": 2,
+          "title": "မဇ္ဈိမနိကာယ် ၁",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 8,
+          "chars": 657591
+        },
+        {
+          "slug": "majjhima/03",
+          "number": 3,
+          "title": "မဇ္ဈိမနိကာယ် ၂",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 8,
+          "chars": 704509
+        },
+        {
+          "slug": "majjhima/04",
+          "number": 4,
+          "title": "မဇ္ဈိမနိကာယ် ၃",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 6,
+          "chars": 567281
+        }
+      ],
+      "count": 3
+    },
+    {
+      "slug": "vinaya",
+      "title": "ဝိနယပိဋက",
+      "books": [
+        {
+          "slug": "vinaya/01",
+          "number": 1,
+          "title": "Parazika Pali",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 565309
+        },
+        {
+          "slug": "vinaya/02",
+          "number": 2,
+          "title": "Parsatetiya Pali",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 648103
+        },
+        {
+          "slug": "vinaya/03",
+          "number": 3,
+          "title": "Maha Wagga Winaya Pali",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 9,
+          "chars": 786588
+        },
+        {
+          "slug": "vinaya/04",
+          "number": 4,
+          "title": "Sula Wagga Pali",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 9,
+          "chars": 786928
+        },
+        {
+          "slug": "vinaya/05",
+          "number": 5,
+          "title": "Pariwara Pali",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 6,
+          "chars": 540706
+        }
+      ],
+      "count": 5
+    },
+    {
+      "slug": "samyutta",
+      "title": "သံယုတ္တနိကာယ် 5 suttas",
+      "books": [
+        {
+          "slug": "samyutta/03",
+          "number": 3,
+          "title": "သံယုတ္တနိကာယ် ၁",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 286763
+        },
+        {
+          "slug": "samyutta/04",
+          "number": 4,
+          "title": "သံယုတ္တနိကာယ် ၂",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 335975
+        },
+        {
+          "slug": "samyutta/05",
+          "number": 5,
+          "title": "သံယုတ္တနိကာယ် ၃",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 343242
+        },
+        {
+          "slug": "samyutta/06",
+          "number": 6,
+          "title": "သံယုတ္တနိကာယ် ၄",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 6,
+          "chars": 508337
+        },
+        {
+          "slug": "samyutta/07",
+          "number": 7,
+          "title": "သံယုတ္တနိကာယ် ၅",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 6,
+          "chars": 592818
+        }
+      ],
+      "count": 5
+    },
+    {
+      "slug": "others",
+      "title": "အခြားစာအုပ်များ",
+      "books": [
+        {
+          "slug": "others/01",
+          "number": 1,
+          "title": "မဟာသတိပဋ္ဌာန် နိဿယ ဆရာတော်ဦးဗုဓ်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 204804
+        },
+        {
+          "slug": "others/02",
+          "number": 2,
+          "title": "ဓမ္မစကြာသုတ် နိဿယ ဆရာတော်ဦးဗုဓ်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 33003
+        },
+        {
+          "slug": "others/03",
+          "number": 3,
+          "title": "ပုဂ္ဂလဝိသေသဒီပကကျမ်း",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 100462
+        },
+        {
+          "slug": "others/07",
+          "number": 7,
+          "title": "ပဋ္ဌာန်း ပစ္စယနိဒေသ (မိုးထိမူ)",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 67748
+        },
+        {
+          "slug": "others/08",
+          "number": 8,
+          "title": "ပဋ္ဌာန်း ပဥှာဝါရ (မိုးထိမူ)",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 212171
+        },
+        {
+          "slug": "others/09",
+          "number": 9,
+          "title": "မိလိန္ဒပဥှာ ပါဠိတော် မြန်မာပြန်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 12,
+          "chars": 1038550
+        },
+        {
+          "slug": "others/10",
+          "number": 10,
+          "title": "ဝိနည်းဥပဒေတော်ကြီး အရှင်သြဘာသ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 9,
+          "chars": 815333
+        },
+        {
+          "slug": "others/11",
+          "number": 11,
+          "title": "နိဗ္ဗာန်ချမ်းသာတရားတော် သပြေကန်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 361466
+        },
+        {
+          "slug": "others/12",
+          "number": 12,
+          "title": "ရဟန္တာနှင့်ပုဂ္ဂိုလ်ထူးများ",
+          "format": "docx",
+          "chapters": 3,
+          "pages": 14,
+          "chars": 1214503
+        },
+        {
+          "slug": "others/13",
+          "number": 13,
+          "title": "မဟာသတိပဋ္ဌာန် အဓိပ္ပါယ်ကောက်",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 88259
+        },
+        {
+          "slug": "others/14",
+          "number": 14,
+          "title": "ဗုဒ္ဓဘာသာဝင်တွေ ယုံကြည်ကြတာက",
+          "format": "docx",
+          "chapters": 17,
+          "pages": 19,
+          "chars": 825901
+        }
+      ],
+      "count": 11
+    },
+    {
+      "slug": "abhidhamma",
+      "title": "အဘိဓမ္မပိဋကပါဠိတော်",
+      "books": [
+        {
+          "slug": "abhidhamma/01",
+          "number": 1,
+          "title": "ဓမ္မသင်္ဂဏီပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 396883
+        },
+        {
+          "slug": "abhidhamma/02",
+          "number": 2,
+          "title": "ဝိဘင်္ဂပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 650863
+        },
+        {
+          "slug": "abhidhamma/03",
+          "number": 3,
+          "title": "ဓါတုကထာပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 132716
+        },
+        {
+          "slug": "abhidhamma/04",
+          "number": 4,
+          "title": "ပုဂ္ဂလပညတ္တိပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 120086
+        },
+        {
+          "slug": "abhidhamma/05",
+          "number": 5,
+          "title": "ကထာဝတ္တုပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 638036
+        },
+        {
+          "slug": "abhidhamma/06",
+          "number": 6,
+          "title": "၆.၁ ယမကပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 385344
+        },
+        {
+          "slug": "abhidhamma/07",
+          "number": 7,
+          "title": "၆.၂ ယမကပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 5,
+          "chars": 480205
+        },
+        {
+          "slug": "abhidhamma/08",
+          "number": 8,
+          "title": "၆.၃ ယမကပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 565722
+        },
+        {
+          "slug": "abhidhamma/09",
+          "number": 9,
+          "title": "၇.၁ ပဋ္ဌာနပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 595445
+        },
+        {
+          "slug": "abhidhamma/10",
+          "number": 10,
+          "title": "၇.၂ ပဋ္ဌာနပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 7,
+          "chars": 665920
+        },
+        {
+          "slug": "abhidhamma/11",
+          "number": 11,
+          "title": "၇.၃ ပဋ္ဌာနပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 8,
+          "chars": 782520
+        },
+        {
+          "slug": "abhidhamma/12",
+          "number": 12,
+          "title": "၇.၄ ပဋ္ဌာနပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 8,
+          "chars": 748988
+        },
+        {
+          "slug": "abhidhamma/13",
+          "number": 13,
+          "title": "၇.၅ ပဋ္ဌာနပါဠိ",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 6,
+          "chars": 523403
+        }
+      ],
+      "count": 13
+    },
+    {
+      "slug": "nandamala",
+      "title": "အရှင်နန္ဒမာလာဘိဝံသ (Ph.D)",
+      "books": [
+        {
+          "slug": "nandamala/04",
+          "number": 4,
+          "title": "အဘိဓမ္မာ မြတ်ဒေသနာ အပိုင်း ၁",
+          "format": "docx",
+          "chapters": 7,
+          "pages": 8,
+          "chars": 394902
+        },
+        {
+          "slug": "nandamala/05",
+          "number": 5,
+          "title": "အဘိဓမ္မာ မြတ်ဒေသနာ အပိုင်း ၂",
+          "format": "docx",
+          "chapters": 10,
+          "pages": 10,
+          "chars": 437842
+        },
+        {
+          "slug": "nandamala/06",
+          "number": 6,
+          "title": "ပဋ္ဌာန်းမြတ်ဒေသနာ",
+          "format": "docx",
+          "chapters": 18,
+          "pages": 18,
+          "chars": 653738
+        }
+      ],
+      "count": 3
+    },
+    {
+      "slug": "anguttara",
+      "title": "အင်္ဂုတ္တရနိကာယ် 11 suttas",
+      "books": [
+        {
+          "slug": "anguttara/04",
+          "number": 4,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၁",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 65171
+        },
+        {
+          "slug": "anguttara/05",
+          "number": 5,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၂",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 71746
+        },
+        {
+          "slug": "anguttara/06",
+          "number": 6,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၃",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 309443
+        },
+        {
+          "slug": "anguttara/07",
+          "number": 7,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၄",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 392108
+        },
+        {
+          "slug": "anguttara/08",
+          "number": 8,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၅",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 358604
+        },
+        {
+          "slug": "anguttara/09",
+          "number": 9,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၆",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 218263
+        },
+        {
+          "slug": "anguttara/10",
+          "number": 10,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၇",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 176767
+        },
+        {
+          "slug": "anguttara/11",
+          "number": 11,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၈",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 3,
+          "chars": 241164
+        },
+        {
+          "slug": "anguttara/12",
+          "number": 12,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၉",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 2,
+          "chars": 143089
+        },
+        {
+          "slug": "anguttara/13",
+          "number": 13,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၁၀",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 4,
+          "chars": 383980
+        },
+        {
+          "slug": "anguttara/14",
+          "number": 14,
+          "title": "အင်္ဂုတ္တရနိကာယ် ၁၁",
+          "format": "docx",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 65807
+        }
+      ],
+      "count": 11
+    }
+  ]
+}

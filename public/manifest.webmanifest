@@ -1,0 +1,16 @@
+{
+  "name": "ဓမ္မစာကြည့်တိုက်",
+  "short_name": "ဓမ္မစာကြည့်တိုက်",
+  "description": "ဓမ္မစာအုပ်များကို အွန်လိုင်းမှ တိုက်ရိုက်ဖတ်ရှုရန်",
+  "lang": "my",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f0e6",
+  "theme_color": "#8b4513",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

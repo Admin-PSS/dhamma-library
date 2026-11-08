@@ -1,0 +1,14 @@
+{
+  "name": "dhamma-library",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "convert": "node scripts/convert.mjs",
+    "publish": "node scripts/publish.mjs",
+    "serve": "python -m http.server 8765 --directory public"
+  },
+  "dependencies": {
+    "mammoth": "^1.13.0"
+  }
+}

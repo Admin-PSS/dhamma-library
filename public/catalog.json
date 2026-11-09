@@ -903,6 +903,31 @@
       "count": 5
     },
     {
+      "slug": "cat-1",
+      "title": "သဒ္ဓမ္မရံသီရိပ်သာဆရာတော်",
+      "books": [
+        {
+          "slug": "cat-1/01",
+          "number": 1,
+          "title": "ဝိပဿနာဉာဏ်များဖြစ်လာသိကောင်းစရာ",
+          "format": "txt",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 65158
+        },
+        {
+          "slug": "cat-1/02",
+          "number": 2,
+          "title": "မိဘကျေးဇူးဆပ်ပါသိကောင်းစရာ",
+          "format": "txt",
+          "chapters": 0,
+          "pages": 1,
+          "chars": 49546
+        }
+      ],
+      "count": 2
+    },
+    {
       "slug": "others",
       "title": "အခြားစာအုပ်များ",
       "books": [
